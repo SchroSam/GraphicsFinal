@@ -5735,6 +5735,8 @@ Entities:
       color: [1, 1, 1, 1]
       ModelAsset:
         uuid: 14816117620444291383
+    BlockGame::FireTest:
+      hideObject: 0
   - Entity: 18166469388212672049
     Name: Ground
     Tag: ""

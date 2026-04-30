@@ -9,15 +9,14 @@ namespace Canis
 
 namespace BlockGame
 {
-    class FireTest : public Canis::ScriptableEntity
+    class TestFire : public Canis::ScriptableEntity
     {
     public:
         static constexpr const char* ScriptName = "BlockGame::FireTest";
 
-        float maxIntensity = 7.0f;
-        Canis::Entity* hiddenObject = nullptr;
+        Canis::Entity* hideObject = nullptr;
 
-        explicit FireTest(Canis::Entity& _entity) : Canis::ScriptableEntity(_entity) {}
+        explicit TestFire(Canis::Entity& _entity) : Canis::ScriptableEntity(_entity) {}
 
         void Create() override;
         void Ready() override;
@@ -25,6 +24,6 @@ namespace BlockGame
         void Update(float _dt) override;
     };
 
-    void RegisterFireTestScript(Canis::App& _app);
-    void UnRegisterFireTestScript(Canis::App& _app);
+    void RegisterTestFireScript(Canis::App& _app);
+    void UnRegisterTestFireScript(Canis::App& _app);
 }

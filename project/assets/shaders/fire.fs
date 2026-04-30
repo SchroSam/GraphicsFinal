@@ -25,6 +25,8 @@ uniform float roughnessValue;
 uniform float metallicValue;
 
 uniform vec3 cameraPosition;
+uniform vec3 ambientLightColor;
+uniform float ambientLightIntensity;
 
 uniform vec3 directionalLightDirection;
 uniform vec3 directionalLightColor;
@@ -120,7 +122,7 @@ void main()
     vec4 albedo = albedoValue * albedoTex;
     vec3 albedoLinear = SRGBToLinear(albedo.rgb);
 
-    if(albedo.a < 0.001)
+    if (albedo.a < 0.001)
         discard;
 
     float specularTex = useSpecularMap ? texture(specularMap, fragmentUV).r : 1.0;
@@ -131,7 +133,8 @@ void main()
     float roughness = clamp(roughnessValue * roughnessTex, 0.0, 1.0);
     float metallic = clamp(metallicValue * metallicTex, 0.0, 1.0);
 
-    vec3 litColor = albedoLinear * 0.04;
+    vec3 ambientLinear = clamp(ambientLightColor, vec3(0.0), vec3(1.0)) * max(ambientLightIntensity, 0.0);
+    vec3 litColor = albedoLinear * ambientLinear;
 
     if (useDirectionalLight)
     {

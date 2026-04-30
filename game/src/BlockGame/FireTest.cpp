@@ -2,6 +2,7 @@
 
 #include <Canis/App.hpp>
 #include <Canis/ConfigHelper.hpp>
+#include <Canis/AssetManager.hpp>
 
 namespace BlockGame
 {
@@ -10,36 +11,33 @@ namespace BlockGame
         Canis::ScriptConf scriptConf = {};
     }
 
-    void RegisterFireTestScript(Canis::App& _app)
+    void RegisterTestFireScript(Canis::App& _app)
     {
-        REGISTER_PROPERTY(scriptConf, BlockGame::FireTest, maxIntensity);
-        REGISTER_PROPERTY(scriptConf, BlockGame::FireTest, hiddenObject);
+        REGISTER_PROPERTY(scriptConf, BlockGame::TestFire, hideObject);
 
-        DEFAULT_CONFIG(scriptConf, BlockGame::FireTest);
+        DEFAULT_CONFIG(scriptConf, BlockGame::TestFire);
 
-        scriptConf.DEFAULT_DRAW_INSPECTOR(BlockGame::FireTest);
+        scriptConf.DEFAULT_DRAW_INSPECTOR(BlockGame::TestFire);
 
         _app.RegisterScript(scriptConf);
     }
 
-    DEFAULT_UNREGISTER_SCRIPT(scriptConf, FireTest)
+    DEFAULT_UNREGISTER_SCRIPT(scriptConf, TestFire)
 
-    void FireTest::Create() {}
+    void TestFire::Create() {}
 
-    void FireTest::Ready() {
-        if(hiddenObject){
-            hiddenObject->active = false;
-
-            // Transform& transform = hiddenObject->GetComponent<Transform>();
-
-        }
+    void TestFire::Ready() {
+        if (hideObject)
+            hideObject->Destroy();
+        
+        i32 textureId = AssetManager::LoadTexture("assets/textures/fire_textures/fire_1.png");
+        i32 materialId = entity.GetComponent<Material>().materialId;
+        //MaterialAsset* material = AssetManager::GetMaterial(materialId);
+        //material->albedoId = textureId;
+        entity.GetComponent<Material>().materialFields.SetTexture("albedoFireMap", textureId);
     }
 
-    void FireTest::Destroy() {}
+    void TestFire::Destroy() {}
 
-    void FireTest::Update(float _dt) {
-        PointLight& point = entity.GetComponent<PointLight>();
-
-        point.intensity += _dt;
-    }
+    void TestFire::Update(float) {}
 }
