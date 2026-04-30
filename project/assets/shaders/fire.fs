@@ -136,30 +136,31 @@ void main()
     vec3 ambientLinear = clamp(ambientLightColor, vec3(0.0), vec3(1.0)) * max(ambientLightIntensity, 0.0);
     vec3 litColor = albedoLinear * ambientLinear;
 
-    if (useDirectionalLight)
-    {
-        vec3 lightDir = normalize(-directionalLightDirection);
-        float shadow = ComputeDirectionalShadow(n, lightDir);
-        vec3 lightContribution = EvaluateLightContribution(n, viewDir, lightDir, directionalLightColor, directionalLightIntensity, roughness, specular, metallic, albedoLinear);
-        litColor += lightContribution * (1.0 - (shadow * 0.95));
-    }
+    // if (useDirectionalLight)
+    // {
+    //     vec3 lightDir = normalize(-directionalLightDirection);
+    //     float shadow = ComputeDirectionalShadow(n, lightDir);
+    //     vec3 lightContribution = EvaluateLightContribution(n, viewDir, lightDir, directionalLightColor, directionalLightIntensity, roughness, specular, metallic, albedoLinear);
+    //     litColor += lightContribution * (1.0 - (shadow * 0.95));
+    // }
 
-    for (int i = 0; i < pointLightCount && i < MAX_POINT_LIGHTS; ++i)
-    {
-        vec3 toLight = pointLightPositions[i] - fragmentWorldPos;
-        float distanceToLight = length(toLight);
-        vec3 lightDir = (distanceToLight > 0.0001) ? (toLight / distanceToLight) : vec3(0.0, 1.0, 0.0);
+    // for (int i = 0; i < pointLightCount && i < MAX_POINT_LIGHTS; ++i)
+    // {
+    //     vec3 toLight = pointLightPositions[i] - fragmentWorldPos;
+    //     float distanceToLight = length(toLight);
+    //     vec3 lightDir = (distanceToLight > 0.0001) ? (toLight / distanceToLight) : vec3(0.0, 1.0, 0.0);
 
-        float attenuation = 1.0;
-        if (pointLightRanges[i] > 0.0001)
-        {
-            float rangeFactor = clamp(1.0 - (distanceToLight / pointLightRanges[i]), 0.0, 1.0);
-            attenuation = rangeFactor * rangeFactor;
-        }
+    //     float attenuation = 1.0;
+    //     if (pointLightRanges[i] > 0.0001)
+    //     {
+    //         float rangeFactor = clamp(1.0 - (distanceToLight / pointLightRanges[i]), 0.0, 1.0);
+    //         attenuation = rangeFactor * rangeFactor;
+    //     }
 
-        vec3 lightColor = pointLightColors[i] * pointLightIntensities[i];
-        litColor += EvaluateLightContribution(n, viewDir, lightDir, lightColor, attenuation, roughness, specular, metallic, albedoLinear);
-    }
+    //     vec3 lightColor = pointLightColors[i] * pointLightIntensities[i];
+    //     litColor += EvaluateLightContribution(n, viewDir, lightDir, lightColor, attenuation, roughness, specular, metallic, albedoLinear);
+    // }
 
-    color = vec4(LinearToSRGB(ACESFilm(litColor)), albedo.a);
+    // To make the fire always full brightness just use albedo directly
+    color = albedo.rgba;
 }
