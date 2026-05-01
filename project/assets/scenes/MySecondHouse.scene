@@ -242,7 +242,7 @@ Entities:
     Canis::RectTransform:
       active: true
       position: [0, 0]
-      size: [98.99999, 33]
+      size: [99, 33]
       scale: [1, 1]
       anchorMin: [0.5, 0.5]
       anchorMax: [0.5, 0.5]
@@ -13610,9 +13610,9 @@ Entities:
     Tag: ""
     Canis::Transform:
       active: true
-      position: [-2.1960218, 0, -2.729547]
-      rotation: [3.1415908, 1.5631571, -3.1411994]
-      scale: [0.9999852, 0.9999998, 0.9999967]
+      position: [-4.738001, 0, -0.49868917]
+      rotation: [-3.1415908, 0.008049859, 3.1415908]
+      scale: [0.9999697, 0.9999998, 0.9999901]
       parent: 0
       children:
         - 1128263370841112531
@@ -15124,6 +15124,1392 @@ Entities:
       rotation: [0, 0, 0]
       scale: [0.7, 0.7, 0.7]
       parent: 14281831673840155532
+      children:
+        []
+    Canis::Rigidbody:
+      active: true
+      motionType: 0
+      mass: 1
+      friction: 0.2
+      restitution: 0
+      linearDamping: 0.05
+      angularDamping: 0.05
+      useGravity: false
+      isSensor: false
+      layer: 4
+      mask: 4294967295
+      allowSleeping: false
+      lockRotationX: false
+      lockRotationY: false
+      lockRotationZ: false
+      linearVelocity: [0, 0, 0]
+      angularVelocity: [0, 0, 0]
+    Canis::BoxCollider:
+      active: true
+      size: [1, 1, 1]
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 904017449731456149
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 17154083321347000101
+  - Entity: 3080070316938641691
+    Name: Pillar
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [4.894799, 0, 4.7743607]
+      rotation: [0, -0, 0]
+      scale: [1, 1, 1]
+      parent: 0
+      children:
+        - 8775509454945623746
+        - 206093008750139535
+        - 1153737703119908740
+        - 2005036202648207479
+  - Entity: 8775509454945623746
+    Name: Log
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-4.8212028, 1.49654, -2.6553936]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 3080070316938641691
+      children:
+        []
+    Canis::Rigidbody:
+      active: true
+      motionType: 0
+      mass: 1
+      friction: 0.2
+      restitution: 0
+      linearDamping: 0.05
+      angularDamping: 0.05
+      useGravity: false
+      isSensor: false
+      layer: 4
+      mask: 4294967295
+      allowSleeping: false
+      lockRotationX: false
+      lockRotationY: false
+      lockRotationZ: false
+      linearVelocity: [0, 0, 0]
+      angularVelocity: [0, 0, 0]
+    Canis::BoxCollider:
+      active: true
+      size: [1, 1, 1]
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 13904854601044475477
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 17154083321347000101
+  - Entity: 206093008750139535
+    Name: Log
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-4.8212028, 2.1923153, -2.6553936]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 3080070316938641691
+      children:
+        []
+    Canis::Rigidbody:
+      active: true
+      motionType: 0
+      mass: 1
+      friction: 0.2
+      restitution: 0
+      linearDamping: 0.05
+      angularDamping: 0.05
+      useGravity: false
+      isSensor: false
+      layer: 4
+      mask: 4294967295
+      allowSleeping: false
+      lockRotationX: false
+      lockRotationY: false
+      lockRotationZ: false
+      linearVelocity: [0, 0, 0]
+      angularVelocity: [0, 0, 0]
+    Canis::BoxCollider:
+      active: true
+      size: [1, 1, 1]
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 13904854601044475477
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 17154083321347000101
+  - Entity: 1153737703119908740
+    Name: Log
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-4.8212028, 3.5817423, -2.6553936]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 3080070316938641691
+      children:
+        []
+    Canis::Rigidbody:
+      active: true
+      motionType: 0
+      mass: 1
+      friction: 0.2
+      restitution: 0
+      linearDamping: 0.05
+      angularDamping: 0.05
+      useGravity: false
+      isSensor: false
+      layer: 4
+      mask: 4294967295
+      allowSleeping: false
+      lockRotationX: false
+      lockRotationY: false
+      lockRotationZ: false
+      linearVelocity: [0, 0, 0]
+      angularVelocity: [0, 0, 0]
+    Canis::BoxCollider:
+      active: true
+      size: [1, 1, 1]
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 13904854601044475477
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 17154083321347000101
+  - Entity: 2005036202648207479
+    Name: Log
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-4.8212028, 2.8865447, -2.6553936]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 3080070316938641691
+      children:
+        []
+    Canis::Rigidbody:
+      active: true
+      motionType: 0
+      mass: 1
+      friction: 0.2
+      restitution: 0
+      linearDamping: 0.05
+      angularDamping: 0.05
+      useGravity: false
+      isSensor: false
+      layer: 4
+      mask: 4294967295
+      allowSleeping: false
+      lockRotationX: false
+      lockRotationY: false
+      lockRotationZ: false
+      linearVelocity: [0, 0, 0]
+      angularVelocity: [0, 0, 0]
+    Canis::BoxCollider:
+      active: true
+      size: [1, 1, 1]
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 13904854601044475477
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 17154083321347000101
+  - Entity: 3895052799064025545
+    Name: Pillar
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [0, 0, 4.7743607]
+      rotation: [0, -0, 0]
+      scale: [1, 1, 1]
+      parent: 0
+      children:
+        - 5551598718623072620
+        - 12486186196763902764
+        - 3239954525366994134
+        - 14218462678703430022
+  - Entity: 5551598718623072620
+    Name: Log
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-4.8212028, 1.49654, -2.6553936]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 3895052799064025545
+      children:
+        []
+    Canis::Rigidbody:
+      active: true
+      motionType: 0
+      mass: 1
+      friction: 0.2
+      restitution: 0
+      linearDamping: 0.05
+      angularDamping: 0.05
+      useGravity: false
+      isSensor: false
+      layer: 4
+      mask: 4294967295
+      allowSleeping: false
+      lockRotationX: false
+      lockRotationY: false
+      lockRotationZ: false
+      linearVelocity: [0, 0, 0]
+      angularVelocity: [0, 0, 0]
+    Canis::BoxCollider:
+      active: true
+      size: [1, 1, 1]
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 13904854601044475477
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 17154083321347000101
+  - Entity: 12486186196763902764
+    Name: Log
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-4.8212028, 2.1923153, -2.6553936]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 3895052799064025545
+      children:
+        []
+    Canis::Rigidbody:
+      active: true
+      motionType: 0
+      mass: 1
+      friction: 0.2
+      restitution: 0
+      linearDamping: 0.05
+      angularDamping: 0.05
+      useGravity: false
+      isSensor: false
+      layer: 4
+      mask: 4294967295
+      allowSleeping: false
+      lockRotationX: false
+      lockRotationY: false
+      lockRotationZ: false
+      linearVelocity: [0, 0, 0]
+      angularVelocity: [0, 0, 0]
+    Canis::BoxCollider:
+      active: true
+      size: [1, 1, 1]
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 13904854601044475477
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 17154083321347000101
+  - Entity: 3239954525366994134
+    Name: Log
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-4.8212028, 3.5817423, -2.6553936]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 3895052799064025545
+      children:
+        []
+    Canis::Rigidbody:
+      active: true
+      motionType: 0
+      mass: 1
+      friction: 0.2
+      restitution: 0
+      linearDamping: 0.05
+      angularDamping: 0.05
+      useGravity: false
+      isSensor: false
+      layer: 4
+      mask: 4294967295
+      allowSleeping: false
+      lockRotationX: false
+      lockRotationY: false
+      lockRotationZ: false
+      linearVelocity: [0, 0, 0]
+      angularVelocity: [0, 0, 0]
+    Canis::BoxCollider:
+      active: true
+      size: [1, 1, 1]
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 13904854601044475477
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 17154083321347000101
+  - Entity: 14218462678703430022
+    Name: Log
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-4.8212028, 2.8865447, -2.6553936]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 3895052799064025545
+      children:
+        []
+    Canis::Rigidbody:
+      active: true
+      motionType: 0
+      mass: 1
+      friction: 0.2
+      restitution: 0
+      linearDamping: 0.05
+      angularDamping: 0.05
+      useGravity: false
+      isSensor: false
+      layer: 4
+      mask: 4294967295
+      allowSleeping: false
+      lockRotationX: false
+      lockRotationY: false
+      lockRotationZ: false
+      linearVelocity: [0, 0, 0]
+      angularVelocity: [0, 0, 0]
+    Canis::BoxCollider:
+      active: true
+      size: [1, 1, 1]
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 13904854601044475477
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 17154083321347000101
+  - Entity: 1584974398636317160
+    Name: Wall
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-2.1960218, 0, -2.729547]
+      rotation: [3.1415908, 1.5631571, -3.1411994]
+      scale: [0.9999852, 0.9999998, 0.9999967]
+      parent: 0
+      children:
+        - 4749241811611091006
+        - 18284959277255541843
+        - 14014726274897252117
+        - 7162440256367734770
+  - Entity: 4749241811611091006
+    Name: Row
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [0, 0, 0]
+      rotation: [0, 0, 0]
+      scale: [1, 1, 1]
+      parent: 1584974398636317160
+      children:
+        - 8569369614430491297
+        - 9282828506767130333
+        - 7620999049238006231
+        - 4982885660106965265
+        - 4860992424202118901
+        - 15990592247513973305
+  - Entity: 8569369614430491297
+    Name: Plank
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-4.122993, 1.49654, -2.6576915]
+      rotation: [0, 0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 4749241811611091006
+      children:
+        []
+    Canis::Rigidbody:
+      active: true
+      motionType: 0
+      mass: 1
+      friction: 0.2
+      restitution: 0
+      linearDamping: 0.05
+      angularDamping: 0.05
+      useGravity: false
+      isSensor: false
+      layer: 4
+      mask: 4294967295
+      allowSleeping: false
+      lockRotationX: false
+      lockRotationY: false
+      lockRotationZ: false
+      linearVelocity: [0, 0, 0]
+      angularVelocity: [0, 0, 0]
+    Canis::BoxCollider:
+      active: true
+      size: [1, 1, 1]
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 904017449731456149
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 17154083321347000101
+  - Entity: 9282828506767130333
+    Name: Plank
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-3.4288783, 1.49654, -2.6711674]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 4749241811611091006
+      children:
+        []
+    Canis::Rigidbody:
+      active: true
+      motionType: 0
+      mass: 1
+      friction: 0.2
+      restitution: 0
+      linearDamping: 0.05
+      angularDamping: 0.05
+      useGravity: false
+      isSensor: false
+      layer: 4
+      mask: 4294967295
+      allowSleeping: false
+      lockRotationX: false
+      lockRotationY: false
+      lockRotationZ: false
+      linearVelocity: [0, 0, 0]
+      angularVelocity: [0, 0, 0]
+    Canis::BoxCollider:
+      active: true
+      size: [1, 1, 1]
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 904017449731456149
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 17154083321347000101
+  - Entity: 7620999049238006231
+    Name: Plank
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-2.739314, 1.4965492, -2.6650305]
+      rotation: [0, 0, 0]
+      scale: [0.69999987, 0.7, 0.70000005]
+      parent: 4749241811611091006
+      children:
+        []
+    Canis::Rigidbody:
+      active: true
+      motionType: 0
+      mass: 1
+      friction: 0.2
+      restitution: 0
+      linearDamping: 0.05
+      angularDamping: 0.05
+      useGravity: false
+      isSensor: false
+      layer: 4
+      mask: 4294967295
+      allowSleeping: false
+      lockRotationX: false
+      lockRotationY: false
+      lockRotationZ: false
+      linearVelocity: [0, 0, 0]
+      angularVelocity: [0, 0, 0]
+    Canis::BoxCollider:
+      active: true
+      size: [1, 1, 1]
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 904017449731456149
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 17154083321347000101
+  - Entity: 4982885660106965265
+    Name: Plank
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-1.3542467, 1.49654, -2.6561792]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 4749241811611091006
+      children:
+        []
+    Canis::Rigidbody:
+      active: true
+      motionType: 0
+      mass: 1
+      friction: 0.2
+      restitution: 0
+      linearDamping: 0.05
+      angularDamping: 0.05
+      useGravity: false
+      isSensor: false
+      layer: 4
+      mask: 4294967295
+      allowSleeping: false
+      lockRotationX: false
+      lockRotationY: false
+      lockRotationZ: false
+      linearVelocity: [0, 0, 0]
+      angularVelocity: [0, 0, 0]
+    Canis::BoxCollider:
+      active: true
+      size: [1, 1, 1]
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 904017449731456149
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 17154083321347000101
+  - Entity: 4860992424202118901
+    Name: Plank
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-0.65992796, 1.49654, -2.6576915]
+      rotation: [0, 0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 4749241811611091006
+      children:
+        []
+    Canis::Rigidbody:
+      active: true
+      motionType: 0
+      mass: 1
+      friction: 0.2
+      restitution: 0
+      linearDamping: 0.05
+      angularDamping: 0.05
+      useGravity: false
+      isSensor: false
+      layer: 4
+      mask: 4294967295
+      allowSleeping: false
+      lockRotationX: false
+      lockRotationY: false
+      lockRotationZ: false
+      linearVelocity: [0, 0, 0]
+      angularVelocity: [0, 0, 0]
+    Canis::BoxCollider:
+      active: true
+      size: [1, 1, 1]
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 904017449731456149
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 17154083321347000101
+  - Entity: 15990592247513973305
+    Name: Plank
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-2.052178, 1.49654, -2.6576915]
+      rotation: [0, 0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 4749241811611091006
+      children:
+        []
+    Canis::Rigidbody:
+      active: true
+      motionType: 0
+      mass: 1
+      friction: 0.2
+      restitution: 0
+      linearDamping: 0.05
+      angularDamping: 0.05
+      useGravity: false
+      isSensor: false
+      layer: 4
+      mask: 4294967295
+      allowSleeping: false
+      lockRotationX: false
+      lockRotationY: false
+      lockRotationZ: false
+      linearVelocity: [0, 0, 0]
+      angularVelocity: [0, 0, 0]
+    Canis::BoxCollider:
+      active: true
+      size: [1, 1, 1]
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 904017449731456149
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 17154083321347000101
+  - Entity: 18284959277255541843
+    Name: Row
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [0, 0.6967858, 0]
+      rotation: [0, -0, 0]
+      scale: [1, 1, 1]
+      parent: 1584974398636317160
+      children:
+        - 4942094411799735480
+        - 6398157623943194941
+        - 16778079751662440014
+        - 17964265226716839503
+        - 12629053548096011361
+        - 3171560348934209267
+  - Entity: 4942094411799735480
+    Name: Plank
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-4.122993, 1.49654, -2.6576915]
+      rotation: [0, 0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 18284959277255541843
+      children:
+        []
+    Canis::Rigidbody:
+      active: true
+      motionType: 0
+      mass: 1
+      friction: 0.2
+      restitution: 0
+      linearDamping: 0.05
+      angularDamping: 0.05
+      useGravity: false
+      isSensor: false
+      layer: 4
+      mask: 4294967295
+      allowSleeping: false
+      lockRotationX: false
+      lockRotationY: false
+      lockRotationZ: false
+      linearVelocity: [0, 0, 0]
+      angularVelocity: [0, 0, 0]
+    Canis::BoxCollider:
+      active: true
+      size: [1, 1, 1]
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 904017449731456149
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 17154083321347000101
+  - Entity: 6398157623943194941
+    Name: Plank
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-3.4288783, 1.49654, -2.6576915]
+      rotation: [0, 0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 18284959277255541843
+      children:
+        []
+    Canis::Rigidbody:
+      active: true
+      motionType: 0
+      mass: 1
+      friction: 0.2
+      restitution: 0
+      linearDamping: 0.05
+      angularDamping: 0.05
+      useGravity: false
+      isSensor: false
+      layer: 4
+      mask: 4294967295
+      allowSleeping: false
+      lockRotationX: false
+      lockRotationY: false
+      lockRotationZ: false
+      linearVelocity: [0, 0, 0]
+      angularVelocity: [0, 0, 0]
+    Canis::BoxCollider:
+      active: true
+      size: [1, 1, 1]
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 904017449731456149
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 17154083321347000101
+  - Entity: 16778079751662440014
+    Name: Plank
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-2.7395134, 1.49654, -2.6576915]
+      rotation: [0, 0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 18284959277255541843
+      children:
+        []
+    Canis::Rigidbody:
+      active: true
+      motionType: 0
+      mass: 1
+      friction: 0.2
+      restitution: 0
+      linearDamping: 0.05
+      angularDamping: 0.05
+      useGravity: false
+      isSensor: false
+      layer: 4
+      mask: 4294967295
+      allowSleeping: false
+      lockRotationX: false
+      lockRotationY: false
+      lockRotationZ: false
+      linearVelocity: [0, 0, 0]
+      angularVelocity: [0, 0, 0]
+    Canis::BoxCollider:
+      active: true
+      size: [1, 1, 1]
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 904017449731456149
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 17154083321347000101
+  - Entity: 17964265226716839503
+    Name: Plank
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-1.3542467, 1.49654, -2.6576915]
+      rotation: [0, 0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 18284959277255541843
+      children:
+        []
+    Canis::Rigidbody:
+      active: true
+      motionType: 0
+      mass: 1
+      friction: 0.2
+      restitution: 0
+      linearDamping: 0.05
+      angularDamping: 0.05
+      useGravity: false
+      isSensor: false
+      layer: 4
+      mask: 4294967295
+      allowSleeping: false
+      lockRotationX: false
+      lockRotationY: false
+      lockRotationZ: false
+      linearVelocity: [0, 0, 0]
+      angularVelocity: [0, 0, 0]
+    Canis::BoxCollider:
+      active: true
+      size: [1, 1, 1]
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 904017449731456149
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 17154083321347000101
+  - Entity: 12629053548096011361
+    Name: Plank
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-0.65992796, 1.49654, -2.6576915]
+      rotation: [0, 0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 18284959277255541843
+      children:
+        []
+    Canis::Rigidbody:
+      active: true
+      motionType: 0
+      mass: 1
+      friction: 0.2
+      restitution: 0
+      linearDamping: 0.05
+      angularDamping: 0.05
+      useGravity: false
+      isSensor: false
+      layer: 4
+      mask: 4294967295
+      allowSleeping: false
+      lockRotationX: false
+      lockRotationY: false
+      lockRotationZ: false
+      linearVelocity: [0, 0, 0]
+      angularVelocity: [0, 0, 0]
+    Canis::BoxCollider:
+      active: true
+      size: [1, 1, 1]
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 904017449731456149
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 17154083321347000101
+  - Entity: 3171560348934209267
+    Name: Plank
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-2.052178, 1.49654, -2.6576915]
+      rotation: [0, 0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 18284959277255541843
+      children:
+        []
+    Canis::Rigidbody:
+      active: true
+      motionType: 0
+      mass: 1
+      friction: 0.2
+      restitution: 0
+      linearDamping: 0.05
+      angularDamping: 0.05
+      useGravity: false
+      isSensor: false
+      layer: 4
+      mask: 4294967295
+      allowSleeping: false
+      lockRotationX: false
+      lockRotationY: false
+      lockRotationZ: false
+      linearVelocity: [0, 0, 0]
+      angularVelocity: [0, 0, 0]
+    Canis::BoxCollider:
+      active: true
+      size: [1, 1, 1]
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 904017449731456149
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 17154083321347000101
+  - Entity: 14014726274897252117
+    Name: Row
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [0, 2.0948114, 0]
+      rotation: [0, -0, 0]
+      scale: [1, 1, 1]
+      parent: 1584974398636317160
+      children:
+        - 936942223423860586
+        - 6071261032228879228
+        - 1011311686154155272
+        - 4707861182170171159
+        - 3330056701571464467
+        - 3359267440139567779
+  - Entity: 936942223423860586
+    Name: Plank
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-4.122993, 1.49654, -2.6576915]
+      rotation: [0, 0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 14014726274897252117
+      children:
+        []
+    Canis::Rigidbody:
+      active: true
+      motionType: 0
+      mass: 1
+      friction: 0.2
+      restitution: 0
+      linearDamping: 0.05
+      angularDamping: 0.05
+      useGravity: false
+      isSensor: false
+      layer: 4
+      mask: 4294967295
+      allowSleeping: false
+      lockRotationX: false
+      lockRotationY: false
+      lockRotationZ: false
+      linearVelocity: [0, 0, 0]
+      angularVelocity: [0, 0, 0]
+    Canis::BoxCollider:
+      active: true
+      size: [1, 1, 1]
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 904017449731456149
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 17154083321347000101
+  - Entity: 6071261032228879228
+    Name: Plank
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-3.4288783, 1.49654, -2.6576915]
+      rotation: [0, 0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 14014726274897252117
+      children:
+        []
+    Canis::Rigidbody:
+      active: true
+      motionType: 0
+      mass: 1
+      friction: 0.2
+      restitution: 0
+      linearDamping: 0.05
+      angularDamping: 0.05
+      useGravity: false
+      isSensor: false
+      layer: 4
+      mask: 4294967295
+      allowSleeping: false
+      lockRotationX: false
+      lockRotationY: false
+      lockRotationZ: false
+      linearVelocity: [0, 0, 0]
+      angularVelocity: [0, 0, 0]
+    Canis::BoxCollider:
+      active: true
+      size: [1, 1, 1]
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 904017449731456149
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 17154083321347000101
+  - Entity: 1011311686154155272
+    Name: Plank
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-2.7395134, 1.49654, -2.6576915]
+      rotation: [0, 0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 14014726274897252117
+      children:
+        []
+    Canis::Rigidbody:
+      active: true
+      motionType: 0
+      mass: 1
+      friction: 0.2
+      restitution: 0
+      linearDamping: 0.05
+      angularDamping: 0.05
+      useGravity: false
+      isSensor: false
+      layer: 4
+      mask: 4294967295
+      allowSleeping: false
+      lockRotationX: false
+      lockRotationY: false
+      lockRotationZ: false
+      linearVelocity: [0, 0, 0]
+      angularVelocity: [0, 0, 0]
+    Canis::BoxCollider:
+      active: true
+      size: [1, 1, 1]
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 904017449731456149
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 17154083321347000101
+  - Entity: 4707861182170171159
+    Name: Plank
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-1.3542467, 1.49654, -2.6576915]
+      rotation: [0, 0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 14014726274897252117
+      children:
+        []
+    Canis::Rigidbody:
+      active: true
+      motionType: 0
+      mass: 1
+      friction: 0.2
+      restitution: 0
+      linearDamping: 0.05
+      angularDamping: 0.05
+      useGravity: false
+      isSensor: false
+      layer: 4
+      mask: 4294967295
+      allowSleeping: false
+      lockRotationX: false
+      lockRotationY: false
+      lockRotationZ: false
+      linearVelocity: [0, 0, 0]
+      angularVelocity: [0, 0, 0]
+    Canis::BoxCollider:
+      active: true
+      size: [1, 1, 1]
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 904017449731456149
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 17154083321347000101
+  - Entity: 3330056701571464467
+    Name: Plank
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-0.65992796, 1.49654, -2.6576915]
+      rotation: [0, 0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 14014726274897252117
+      children:
+        []
+    Canis::Rigidbody:
+      active: true
+      motionType: 0
+      mass: 1
+      friction: 0.2
+      restitution: 0
+      linearDamping: 0.05
+      angularDamping: 0.05
+      useGravity: false
+      isSensor: false
+      layer: 4
+      mask: 4294967295
+      allowSleeping: false
+      lockRotationX: false
+      lockRotationY: false
+      lockRotationZ: false
+      linearVelocity: [0, 0, 0]
+      angularVelocity: [0, 0, 0]
+    Canis::BoxCollider:
+      active: true
+      size: [1, 1, 1]
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 904017449731456149
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 17154083321347000101
+  - Entity: 3359267440139567779
+    Name: Plank
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-2.052178, 1.49654, -2.6576915]
+      rotation: [0, 0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 14014726274897252117
+      children:
+        []
+    Canis::Rigidbody:
+      active: true
+      motionType: 0
+      mass: 1
+      friction: 0.2
+      restitution: 0
+      linearDamping: 0.05
+      angularDamping: 0.05
+      useGravity: false
+      isSensor: false
+      layer: 4
+      mask: 4294967295
+      allowSleeping: false
+      lockRotationX: false
+      lockRotationY: false
+      lockRotationZ: false
+      linearVelocity: [0, 0, 0]
+      angularVelocity: [0, 0, 0]
+    Canis::BoxCollider:
+      active: true
+      size: [1, 1, 1]
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 904017449731456149
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 17154083321347000101
+  - Entity: 7162440256367734770
+    Name: Row
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [0, 1.3945414, 0]
+      rotation: [0, -0, 0]
+      scale: [1, 1, 1]
+      parent: 1584974398636317160
+      children:
+        - 11172430447804604899
+        - 9287628518357646851
+        - 10484406651397663991
+        - 4285347692248115686
+        - 13190965238579345479
+        - 1646074478679709730
+  - Entity: 11172430447804604899
+    Name: Plank
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-4.122993, 1.49654, -2.6576915]
+      rotation: [0, 0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 7162440256367734770
+      children:
+        []
+    Canis::Rigidbody:
+      active: true
+      motionType: 0
+      mass: 1
+      friction: 0.2
+      restitution: 0
+      linearDamping: 0.05
+      angularDamping: 0.05
+      useGravity: false
+      isSensor: false
+      layer: 4
+      mask: 4294967295
+      allowSleeping: false
+      lockRotationX: false
+      lockRotationY: false
+      lockRotationZ: false
+      linearVelocity: [0, 0, 0]
+      angularVelocity: [0, 0, 0]
+    Canis::BoxCollider:
+      active: true
+      size: [1, 1, 1]
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 904017449731456149
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 17154083321347000101
+  - Entity: 9287628518357646851
+    Name: Plank
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-3.4288783, 1.49654, -2.6576915]
+      rotation: [0, 0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 7162440256367734770
+      children:
+        []
+    Canis::Rigidbody:
+      active: true
+      motionType: 0
+      mass: 1
+      friction: 0.2
+      restitution: 0
+      linearDamping: 0.05
+      angularDamping: 0.05
+      useGravity: false
+      isSensor: false
+      layer: 4
+      mask: 4294967295
+      allowSleeping: false
+      lockRotationX: false
+      lockRotationY: false
+      lockRotationZ: false
+      linearVelocity: [0, 0, 0]
+      angularVelocity: [0, 0, 0]
+    Canis::BoxCollider:
+      active: true
+      size: [1, 1, 1]
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 904017449731456149
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 17154083321347000101
+  - Entity: 10484406651397663991
+    Name: Plank
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-2.7395134, 1.49654, -2.6576915]
+      rotation: [0, 0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 7162440256367734770
+      children:
+        []
+    Canis::Rigidbody:
+      active: true
+      motionType: 0
+      mass: 1
+      friction: 0.2
+      restitution: 0
+      linearDamping: 0.05
+      angularDamping: 0.05
+      useGravity: false
+      isSensor: false
+      layer: 4
+      mask: 4294967295
+      allowSleeping: false
+      lockRotationX: false
+      lockRotationY: false
+      lockRotationZ: false
+      linearVelocity: [0, 0, 0]
+      angularVelocity: [0, 0, 0]
+    Canis::BoxCollider:
+      active: true
+      size: [1, 1, 1]
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 904017449731456149
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 17154083321347000101
+  - Entity: 4285347692248115686
+    Name: Plank
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-1.3542467, 1.49654, -2.6576915]
+      rotation: [0, 0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 7162440256367734770
+      children:
+        []
+    Canis::Rigidbody:
+      active: true
+      motionType: 0
+      mass: 1
+      friction: 0.2
+      restitution: 0
+      linearDamping: 0.05
+      angularDamping: 0.05
+      useGravity: false
+      isSensor: false
+      layer: 4
+      mask: 4294967295
+      allowSleeping: false
+      lockRotationX: false
+      lockRotationY: false
+      lockRotationZ: false
+      linearVelocity: [0, 0, 0]
+      angularVelocity: [0, 0, 0]
+    Canis::BoxCollider:
+      active: true
+      size: [1, 1, 1]
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 904017449731456149
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 17154083321347000101
+  - Entity: 13190965238579345479
+    Name: Plank
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-0.65992796, 1.49654, -2.6576915]
+      rotation: [0, 0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 7162440256367734770
+      children:
+        []
+    Canis::Rigidbody:
+      active: true
+      motionType: 0
+      mass: 1
+      friction: 0.2
+      restitution: 0
+      linearDamping: 0.05
+      angularDamping: 0.05
+      useGravity: false
+      isSensor: false
+      layer: 4
+      mask: 4294967295
+      allowSleeping: false
+      lockRotationX: false
+      lockRotationY: false
+      lockRotationZ: false
+      linearVelocity: [0, 0, 0]
+      angularVelocity: [0, 0, 0]
+    Canis::BoxCollider:
+      active: true
+      size: [1, 1, 1]
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 904017449731456149
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 17154083321347000101
+  - Entity: 1646074478679709730
+    Name: Plank
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-2.052178, 1.49654, -2.6576915]
+      rotation: [0, 0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 7162440256367734770
       children:
         []
     Canis::Rigidbody:
