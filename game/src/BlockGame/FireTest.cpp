@@ -31,11 +31,11 @@ namespace BlockGame
         if (hideObject)
             hideObject->Destroy();
         
-        i32 textureId = AssetManager::LoadTexture("assets/textures/fire_textures/fire_1.png");
+        //i32 textureId = AssetManager::LoadTexture("assets/textures/fire_textures/fire_1.png");
         //i32 materialId = entity.GetComponent<Material>().materialId;
         //MaterialAsset* material = AssetManager::GetMaterial(materialId);
         //material->albedoId = textureId;
-        entity.GetComponent<Material>().materialFields.SetTexture("albedoFireMap", textureId);
+        //entity.GetComponent<Material>().materialFields.SetTexture("albedoFireMap", textureId);
     }
 
     void TestFire::Destroy() {}
@@ -44,7 +44,8 @@ namespace BlockGame
     {
         static float timer = 0.0f;
         static float maxTimer = 0.05f;
-        static int fireNum = 0;
+        static int fireNum = 1;
+        static i32 textureId = AssetManager::LoadTexture("assets/textures/fire_textures/fire_1.png");
 
         timer += _dt;
 
@@ -55,7 +56,7 @@ namespace BlockGame
             if(++fireNum > 31)
                 fireNum = 1;
 
-            i32 textureId = AssetManager::LoadTexture("assets/textures/fire_textures/fire_" + std::to_string(fireNum) + ".png");
+            textureId = AssetManager::LoadTexture("assets/textures/fire_textures/fire_" + std::to_string(fireNum) + ".png");
 
             entity.GetComponent<Material>().materialFields.SetTexture("albedoFireMap", textureId);
 
