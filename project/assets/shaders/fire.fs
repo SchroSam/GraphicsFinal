@@ -162,5 +162,5 @@ void main()
     // }
 
     // To make the fire always full brightness just use albedo directly
-    color = albedo.rgba;
+    color = albedo;
 }
