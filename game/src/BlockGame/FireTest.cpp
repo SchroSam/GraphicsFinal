@@ -46,6 +46,7 @@ namespace BlockGame
         {
             timer = 0.0f;
             
+            // fancy increment and comparison in one line
             if(++fireNum > 31)
                 fireNum = 1;
 

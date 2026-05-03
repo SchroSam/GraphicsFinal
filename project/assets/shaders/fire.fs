@@ -47,71 +47,7 @@ vec3 SRGBToLinear(vec3 value)
     return pow(max(value, vec3(0.0)), vec3(2.2));
 }
 
-vec3 LinearToSRGB(vec3 value)
-{
-    return pow(max(value, vec3(0.0)), vec3(1.0 / 2.2));
-}
-
-vec3 ACESFilm(vec3 value)
-{
-    const float a = 2.51;
-    const float b = 0.03;
-    const float c = 2.43;
-    const float d = 0.59;
-    const float e = 0.14;
-    return clamp((value * (a * value + b)) / (value * (c * value + d) + e), 0.0, 1.0);
-}
-
-vec3 EvaluateLightContribution(
-    vec3 n,
-    vec3 viewDir,
-    vec3 lightDir,
-    vec3 lightColor,
-    float lightIntensity,
-    float roughness,
-    float specular,
-    float metallic,
-    vec3 albedoLinear)
-{
-    float diffuse = max(dot(n, lightDir), 0.0);
-    vec3 halfDir = normalize(lightDir + viewDir);
-    float specularTerm = pow(max(dot(n, halfDir), 0.0), 32.0);
-
-    float diffuseLighting = diffuse * (1.0 - 0.4 * roughness);
-    vec3 diffuseColor = albedoLinear * diffuseLighting * mix(1.0, 0.65, metallic);
-    vec3 specColor = vec3(specular * specularTerm * (1.0 - 0.5 * roughness));
-    return (diffuseColor + specColor) * lightColor * lightIntensity;
-}
-
-float ComputeDirectionalShadow(vec3 n, vec3 lightDir)
-{
-    if (!useDirectionalShadow)
-        return 0.0;
-
-    vec4 fragPosLightSpace = directionalLightSpaceMatrix * vec4(fragmentWorldPos, 1.0);
-    vec3 projCoords = fragPosLightSpace.xyz / max(fragPosLightSpace.w, 0.00001);
-    projCoords = projCoords * 0.5 + 0.5;
-
-    if (projCoords.z > 1.0)
-        return 0.0;
-
-    float currentDepth = projCoords.z;
-    float bias = max(0.0008 * (1.0 - dot(n, lightDir)), 0.0006);
-    vec2 texelSize = 1.0 / vec2(textureSize(directionalShadowMap, 0));
-    float shadow = 0.0;
-
-    for (int y = -1; y <= 1; ++y)
-    {
-        for (int x = -1; x <= 1; ++x)
-        {
-            vec2 offset = vec2(float(x), float(y)) * texelSize;
-            float sampleDepth = texture(directionalShadowMap, projCoords.xy + offset).r;
-            shadow += (currentDepth - bias > sampleDepth) ? 1.0 : 0.0;
-        }
-    }
-
-    return shadow / 9.0;
-}
+// Deleted a bunch of stuff that's not relevant to fire because as a light source it doesn't have a shadow
 
 void main()
 {

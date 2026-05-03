@@ -36,11 +36,13 @@ namespace BlockGame
             object->active = false;
         }
 
-        // second check for safety
+        // iterate through all child objects and use rand % size to choose a few random plants to turn on at runtime
+        // second check for index oob safety
         for(int i = 0; i < numOfFoliage && i < objects.size() - 1; i++)
         {
             j = rand() % objects.size();
             
+            // set active then erase the element to remove it from the next round's possibilities
             objects[j]->active = true;
             objects.erase(objects.begin() + j); // needs an iterator (╥﹏╥)
         }

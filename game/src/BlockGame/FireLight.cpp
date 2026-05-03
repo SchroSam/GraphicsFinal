@@ -33,8 +33,12 @@ namespace BlockGame
 
        PointLight& light = entity.GetComponent<PointLight>();
 
+
+        // take previous light intensity into account to make random fluctuations less abrubt
         light.intensity = light.intensity + ((float)(rand() % 30) / 100.0f) - 0.1f;
 
+
+        // add bounds to ensure light doesn't go out or get too bright
         if(light.intensity < 0.1f)
             light.intensity = 0.1f;
         else if(light.intensity > 0.6f)
