@@ -15424,7 +15424,7 @@ Entities:
       position: [-4.839972, 1.4993792, 0.026709259]
       rotation: [0, -0, 0]
       scale: [0.7, 0.7, 0.7]
-      parent: 0
+      parent: 6251192697598613375
       children:
         []
     Canis::Material:
@@ -15443,7 +15443,7 @@ Entities:
       position: [-4.839972, 1.4993792, 0.7230456]
       rotation: [0, -0, 0]
       scale: [0.7, 0.7, 0.7]
-      parent: 0
+      parent: 6251192697598613375
       children:
         []
     Canis::Material:
@@ -15462,7 +15462,7 @@ Entities:
       position: [-4.839972, 2.1976607, -0.65892124]
       rotation: [0, -0, 0]
       scale: [0.7, 0.7, 0.7]
-      parent: 0
+      parent: 6251192697598613375
       children:
         []
     Canis::Material:
@@ -15631,7 +15631,7 @@ Entities:
       position: [-4.839972, 1.4993792, -0.65892124]
       rotation: [0, -0, 0]
       scale: [0.7, 0.7, 0.7]
-      parent: 0
+      parent: 6251192697598613375
       children:
         []
     Canis::Material:
@@ -15730,7 +15730,7 @@ Entities:
       position: [-4.839972, 2.1976607, 0.0296399]
       rotation: [0, -0, 0]
       scale: [0.7, 0.7, 0.7]
-      parent: 0
+      parent: 6251192697598613375
       children:
         []
     Canis::Material:
@@ -16261,7 +16261,7 @@ Entities:
       position: [-4.839972, 1.4993792, -1.3506314]
       rotation: [0, -0, 0]
       scale: [0.7, 0.7, 0.7]
-      parent: 0
+      parent: 6251192697598613375
       children:
         []
     Canis::Material:
@@ -16316,3 +16316,361 @@ Entities:
         uuid: 14816117620444291383
     BlockGame::FireTest:
       hideObject: 0
+  - Entity: 6251192697598613375
+    Name: FirePlace
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [0, 0, 0]
+      rotation: [0, 0, 0]
+      scale: [1, 1, 1]
+      parent: 0
+      children:
+        - 7666414460456465756
+        - 18108573079208013052
+        - 16516418789825280229
+        - 8164733136329202411
+        - 17001437898469476105
+        - 10474617614135348063
+  - Entity: 12752586808806588409
+    Name: PotentialGrass
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [0, 0, 0]
+      rotation: [0, 0, 0]
+      scale: [1, 1, 1]
+      parent: 0
+      children:
+        - 11716420508380628875
+        - 3054217862145234369
+        - 3915173318433501566
+        - 163603452709697781
+        - 8081238954473502001
+        - 11751913451553871242
+        - 997425695641104775
+        - 10668280566012970511
+        - 2174940272519558944
+        - 17885650860976886451
+        - 8199791283877159078
+        - 4384852605485529436
+        - 18056576822687110882
+        - 1061985972323191361
+        - 8190390476321311608
+    BlockGame::RandomFoliage:
+      numOfFoliage: 6
+  - Entity: 11716420508380628875
+    Name: Grass
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-5.71749, 1.1893328, 3.8237376]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 12752586808806588409
+      children:
+        []
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 2737429115392316869
+      MaterialSlots:
+        - ~
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 6473578462729814710
+  - Entity: 3054217862145234369
+    Name: Grass
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-4.161192, 1.1893326, 4.7020836]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 12752586808806588409
+      children:
+        []
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 2737429115392316869
+      MaterialSlots:
+        - ~
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 6473578462729814710
+  - Entity: 3915173318433501566
+    Name: Grass
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-3.4359765, 1.1893324, 5.467035]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 12752586808806588409
+      children:
+        []
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 2737429115392316869
+      MaterialSlots:
+        - ~
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 6473578462729814710
+  - Entity: 163603452709697781
+    Name: Grass
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-6.4208508, 1.1893325, 4.986688]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 12752586808806588409
+      children:
+        []
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 2737429115392316869
+      MaterialSlots:
+        - ~
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 6473578462729814710
+  - Entity: 8081238954473502001
+    Name: Grass
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-6.0746455, 1.1891607, 1.9286888]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 12752586808806588409
+      children:
+        []
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 2737429115392316869
+      MaterialSlots:
+        - ~
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 6473578462729814710
+  - Entity: 11751913451553871242
+    Name: Grass
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-5.1462603, 1.1893324, 5.6906776]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 12752586808806588409
+      children:
+        []
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 2737429115392316869
+      MaterialSlots:
+        - ~
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 6473578462729814710
+  - Entity: 997425695641104775
+    Name: Grass
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-7.048629, 1.1891658, 2.9142742]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 12752586808806588409
+      children:
+        []
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 2737429115392316869
+      MaterialSlots:
+        - ~
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 6473578462729814710
+  - Entity: 10668280566012970511
+    Name: Grass
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [0.1811552, 1.1893078, 4.7775855]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 12752586808806588409
+      children:
+        []
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 2737429115392316869
+      MaterialSlots:
+        - ~
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 6473578462729814710
+  - Entity: 2174940272519558944
+    Name: Grass
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-7.275528, 1.1892849, 0.9229313]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 12752586808806588409
+      children:
+        []
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 2737429115392316869
+      MaterialSlots:
+        - ~
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 6473578462729814710
+  - Entity: 17885650860976886451
+    Name: Grass
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-6.352223, 1.1894127, -1.1101304]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 12752586808806588409
+      children:
+        []
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 2737429115392316869
+      MaterialSlots:
+        - ~
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 6473578462729814710
+  - Entity: 8199791283877159078
+    Name: Grass
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-0.21016848, 1.1894172, 3.4344494]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 12752586808806588409
+      children:
+        []
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 2737429115392316869
+      MaterialSlots:
+        - ~
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 6473578462729814710
+  - Entity: 4384852605485529436
+    Name: Grass
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-1.359025, 1.1893088, 5.1491966]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 12752586808806588409
+      children:
+        []
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 2737429115392316869
+      MaterialSlots:
+        - ~
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 6473578462729814710
+  - Entity: 18056576822687110882
+    Name: Grass
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [1.1567571, 1.1894447, 3.6287472]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 12752586808806588409
+      children:
+        []
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 2737429115392316869
+      MaterialSlots:
+        - ~
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 6473578462729814710
+  - Entity: 1061985972323191361
+    Name: Grass
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [1.5348818, 1.1893092, 5.6154313]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 12752586808806588409
+      children:
+        []
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 2737429115392316869
+      MaterialSlots:
+        - ~
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 6473578462729814710
+  - Entity: 8190390476321311608
+    Name: Grass
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [1.4391367, 1.1894541, 1.7867014]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 12752586808806588409
+      children:
+        []
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 2737429115392316869
+      MaterialSlots:
+        - ~
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 6473578462729814710

@@ -10,8 +10,6 @@ uniform sampler2D roughnessMap;
 uniform sampler2D metallicMap;
 uniform sampler2D directionalShadowMap;
 
-uniform sampler2D albedoFireMap;
-
 uniform bool useAlbedoMap;
 uniform bool useSpecularMap;
 uniform bool useRoughnessMap;
@@ -25,8 +23,6 @@ uniform float roughnessValue;
 uniform float metallicValue;
 
 uniform vec3 cameraPosition;
-uniform vec3 ambientLightColor;
-uniform float ambientLightIntensity;
 
 uniform vec3 directionalLightDirection;
 uniform vec3 directionalLightColor;
@@ -118,12 +114,12 @@ void main()
     vec3 n = normalize(fragmentNormal);
     vec3 viewDir = normalize(cameraPosition - fragmentWorldPos);
 
-    vec4 albedoTex = useAlbedoMap ? texture(albedoFireMap, fragmentUV) : vec4(1.0);
+    vec4 albedoTex = useAlbedoMap ? texture(albedoMap, fragmentUV) : vec4(1.0);
     vec4 albedo = albedoValue * albedoTex;
     vec3 albedoLinear = SRGBToLinear(albedo.rgb);
 
     if (albedo.a < 0.001)
-        discard;
+    discard;
 
     float specularTex = useSpecularMap ? texture(specularMap, fragmentUV).r : 1.0;
     float roughnessTex = useRoughnessMap ? texture(roughnessMap, fragmentUV).r : 1.0;
@@ -133,9 +129,32 @@ void main()
     float roughness = clamp(roughnessValue * roughnessTex, 0.0, 1.0);
     float metallic = clamp(metallicValue * metallicTex, 0.0, 1.0);
 
-    vec3 ambientLinear = clamp(ambientLightColor, vec3(0.0), vec3(1.0)) * max(ambientLightIntensity, 0.0);
-    vec3 litColor = albedoLinear * ambientLinear;
+    vec3 litColor = albedoLinear * 0.04;
 
-    // To make the fire always full brightness just use albedo directly
-    color = albedo;
+    if (useDirectionalLight)
+    {
+        vec3 lightDir = normalize(-directionalLightDirection);
+        float shadow = ComputeDirectionalShadow(n, lightDir);
+        vec3 lightContribution = EvaluateLightContribution(n, viewDir, lightDir, directionalLightColor, directionalLightIntensity, roughness, specular, metallic, albedoLinear);
+        litColor += lightContribution * (1.0 - (shadow * 0.95));
+    }
+
+    for (int i = 0; i < pointLightCount && i < MAX_POINT_LIGHTS; ++i)
+    {
+        vec3 toLight = pointLightPositions[i] - fragmentWorldPos;
+        float distanceToLight = length(toLight);
+        vec3 lightDir = (distanceToLight > 0.0001) ? (toLight / distanceToLight) : vec3(0.0, 1.0, 0.0);
+
+        float attenuation = 1.0;
+        if (pointLightRanges[i] > 0.0001)
+        {
+            float rangeFactor = clamp(1.0 - (distanceToLight / pointLightRanges[i]), 0.0, 1.0);
+            attenuation = rangeFactor * rangeFactor;
+        }
+
+        vec3 lightColor = pointLightColors[i] * pointLightIntensities[i];
+        litColor += EvaluateLightContribution(n, viewDir, lightDir, lightColor, attenuation, roughness, specular, metallic, albedoLinear);
+    }
+
+    color = vec4(LinearToSRGB(ACESFilm(litColor)), albedo.a);
 }
