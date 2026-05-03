@@ -14,9 +14,7 @@ namespace BlockGame
     public:
         static constexpr const char* ScriptName = "BlockGame::FireTest";
 
-        Canis::Entity* hideObject = nullptr;
-
-        explicit TestFire(Canis::Entity& _entity) : Canis::ScriptableEntity(_entity) {}
+        explicit TestFire(Canis::Entity& _entity) : Canis::ScriptableEntity(_entity) {}        
 
         void Create() override;
         void Ready() override;

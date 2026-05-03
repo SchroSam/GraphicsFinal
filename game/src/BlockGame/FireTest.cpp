@@ -14,7 +14,7 @@ namespace BlockGame
 
     void RegisterTestFireScript(Canis::App& _app)
     {
-        REGISTER_PROPERTY(scriptConf, BlockGame::TestFire, hideObject);
+        // REGISTER_PROPERTY(scriptConf, BlockGame::TestFire, hideObject);
 
         DEFAULT_CONFIG(scriptConf, BlockGame::TestFire);
 
@@ -27,21 +27,14 @@ namespace BlockGame
 
     void TestFire::Create() {}
 
-    void TestFire::Ready() {
-        if (hideObject)
-            hideObject->Destroy();
-        
-        //i32 textureId = AssetManager::LoadTexture("assets/textures/fire_textures/fire_1.png");
-        //i32 materialId = entity.GetComponent<Material>().materialId;
-        //MaterialAsset* material = AssetManager::GetMaterial(materialId);
-        //material->albedoId = textureId;
-        //entity.GetComponent<Material>().materialFields.SetTexture("albedoFireMap", textureId);
-    }
+    void TestFire::Ready() {}
 
     void TestFire::Destroy() {}
 
     void TestFire::Update(float _dt) 
     {
+
+        // Fire Texture logic
         static float timer = 0.0f;
         static float maxTimer = 0.05f;
         static int fireNum = 1;
@@ -61,5 +54,6 @@ namespace BlockGame
             entity.GetComponent<Material>().materialFields.SetTexture("albedoFireMap", textureId);
 
         }
+
     }
 }

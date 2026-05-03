@@ -1,0 +1,9 @@
+shader:
+  uuid: 3180167804450995756
+  path: assets/shaders/grassShader.vs
+albedo:
+  uuid: 11765529812768333279
+  path: assets/textures/block_game/blue_orchid.png
+color: [0.9852941, 0.9852941, 0.9852941, 1]
+backFaceCulling: true
+specularValue: 0.05

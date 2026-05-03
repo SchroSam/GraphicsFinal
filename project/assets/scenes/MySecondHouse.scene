@@ -21,54 +21,15 @@ Entities:
       fovDegrees: 60
       nearClip: 0.1
       farClip: 300
+    BlockGame::FireLight: ~
   - Entity: 910002
     Name: Sun
     Tag: ""
     Canis::DirectionalLight:
       enabled: true
-      color: [0.99019605, 0.99019605, 0.99019605, 1]
-      intensity: 5
-      direction: [-0.35, -1, -0.2]
-  - Entity: 910010
-    Name: Ground
-    Tag: ""
-    Canis::Transform:
-      active: true
-      position: [0, -0.5, 0]
-      rotation: [0, 0, 0]
-      scale: [24, 1, 24]
-      parent: 16495376888019668401
-      children:
-        []
-    Canis::Rigidbody:
-      active: true
-      motionType: 0
-      mass: 1
-      friction: 0.8
-      restitution: 0
-      linearDamping: 0.05
-      angularDamping: 0.05
-      useGravity: true
-      isSensor: false
-      layer: 1
-      mask: 4294967295
-      allowSleeping: true
-      lockRotationX: false
-      lockRotationY: false
-      lockRotationZ: false
-      linearVelocity: [0, 0, 0]
-      angularVelocity: [0, 0, 0]
-    Canis::BoxCollider:
-      active: true
-      size: [1, 1, 1]
-    Canis::Material:
-      color: [0.32, 0.38, 0.46, 1]
-      MaterialAsset:
-        uuid: 17490362529814420531
-    Canis::Model:
-      color: [0.32, 0.38, 0.46, 1]
-      ModelAsset:
-        uuid: 17154083321347000101
+      color: [0.87644786, 0.6254594, 0.111670986, 1]
+      intensity: 1.4
+      direction: [-1.35, -1, -0.4]
   - Entity: 434437215123255667
     Name: GrassRow
     Tag: ""
@@ -322,17 +283,6 @@ Entities:
       FontAsset:
         uuid: 14618725492368012463
         fontSize: 32
-  - Entity: 16495376888019668401
-    Name: Platform
-    Tag: ""
-    Canis::Transform:
-      active: true
-      position: [0, 0, 0]
-      rotation: [0, 0, 0]
-      scale: [1, 1, 1]
-      parent: 0
-      children:
-        - 910010
   - Entity: 11802064827837414070
     Name: Grass
     Tag: ""
@@ -5735,8 +5685,7 @@ Entities:
       color: [1, 1, 1, 1]
       ModelAsset:
         uuid: 14816117620444291383
-    BlockGame::FireTest:
-      hideObject: 0
+    BlockGame::FireTest: ~
   - Entity: 18166469388212672049
     Name: Ground
     Tag: ""
@@ -13722,8 +13671,9 @@ Entities:
     Canis::PointLight:
       enabled: true
       color: [1, 1, 1, 1]
-      intensity: 1.5
+      intensity: 0.5
       range: 15
+    BlockGame::FireLight: ~
   - Entity: 10219373927228557120
     Name: Plank
     Tag: ""
@@ -15527,8 +15477,9 @@ Entities:
     Canis::PointLight:
       enabled: true
       color: [1, 1, 1, 1]
-      intensity: 1
+      intensity: 0.5
       range: 15
+    BlockGame::FireLight: ~
   - Entity: 18284959277255541843
     Name: Row
     Tag: ""
@@ -16314,8 +16265,7 @@ Entities:
       color: [1, 1, 1, 1]
       ModelAsset:
         uuid: 14816117620444291383
-    BlockGame::FireTest:
-      hideObject: 0
+    BlockGame::FireTest: ~
   - Entity: 6251192697598613375
     Name: FirePlace
     Tag: ""
@@ -16668,6 +16618,348 @@ Entities:
       color: [1, 1, 1, 1]
       MaterialAsset:
         uuid: 2737429115392316869
+      MaterialSlots:
+        - ~
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 6473578462729814710
+  - Entity: 1240827277412224627
+    Name: PotentialFlowers
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [0, 0, 0]
+      rotation: [0, 0, 0]
+      scale: [1, 1, 1]
+      parent: 0
+      children:
+        - 14986474841745382337
+        - 11306108190859259557
+        - 3386000943328602655
+        - 4180148361519355801
+        - 8620921491054437904
+        - 8778090449483956529
+        - 3850112360824300119
+        - 16185981406642443778
+        - 7641946878032581396
+        - 14323645196797499047
+        - 8761465341068049331
+        - 17452436669213064868
+        - 16861469600611232704
+        - 9571806065026789962
+        - 8968657676549157174
+    BlockGame::RandomFoliage:
+      numOfFoliage: 8
+  - Entity: 14986474841745382337
+    Name: Flower
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-3.9855185, 1.1894538, 3.8312497]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 1240827277412224627
+      children:
+        []
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 4744781553579738583
+      MaterialSlots:
+        - ~
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 6473578462729814710
+  - Entity: 11306108190859259557
+    Name: Flower
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-1.7597976, 1.1894536, 5.9609303]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 1240827277412224627
+      children:
+        []
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 4744781553579738583
+      MaterialSlots:
+        - ~
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 6473578462729814710
+  - Entity: 3386000943328602655
+    Name: Flower
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-3.249112, 1.1894537, 4.837464]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 1240827277412224627
+      children:
+        []
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 4744781553579738583
+      MaterialSlots:
+        - ~
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 6473578462729814710
+  - Entity: 4180148361519355801
+    Name: Flower
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-5.427022, 1.1894537, 4.467053]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 1240827277412224627
+      children:
+        []
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 4744781553579738583
+      MaterialSlots:
+        - ~
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 6473578462729814710
+  - Entity: 8620921491054437904
+    Name: Flower
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-4.470891, 1.1894536, 5.9405184]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 1240827277412224627
+      children:
+        []
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 4744781553579738583
+      MaterialSlots:
+        - ~
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 6473578462729814710
+  - Entity: 8778090449483956529
+    Name: Flower
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-7.100976, 1.1894536, 3.910311]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 1240827277412224627
+      children:
+        []
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 4744781553579738583
+      MaterialSlots:
+        - ~
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 6473578462729814710
+  - Entity: 3850112360824300119
+    Name: Flower
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-6.122259, 1.1894537, 2.9528873]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 1240827277412224627
+      children:
+        []
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 4744781553579738583
+      MaterialSlots:
+        - ~
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 6473578462729814710
+  - Entity: 16185981406642443778
+    Name: Flower
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [1.7463305, 1.1891948, 4.706098]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 1240827277412224627
+      children:
+        []
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 4744781553579738583
+      MaterialSlots:
+        - ~
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 6473578462729814710
+  - Entity: 7641946878032581396
+    Name: Flower
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [1.731286, 1.1893224, 0.8153536]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 1240827277412224627
+      children:
+        []
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 4744781553579738583
+      MaterialSlots:
+        - ~
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 6473578462729814710
+  - Entity: 14323645196797499047
+    Name: Flower
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [2.0630207, 1.1893146, -1.7764115]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 1240827277412224627
+      children:
+        []
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 4744781553579738583
+      MaterialSlots:
+        - ~
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 6473578462729814710
+  - Entity: 8761465341068049331
+    Name: Flower
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [1.9410739, 1.1891965, -0.18916875]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 1240827277412224627
+      children:
+        []
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 4744781553579738583
+      MaterialSlots:
+        - ~
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 6473578462729814710
+  - Entity: 17452436669213064868
+    Name: Flower
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [2.0389147, 1.189438, 2.81747]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 1240827277412224627
+      children:
+        []
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 4744781553579738583
+      MaterialSlots:
+        - ~
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 6473578462729814710
+  - Entity: 16861469600611232704
+    Name: Flower
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-1.5696168, 1.1892081, 3.0710666]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 1240827277412224627
+      children:
+        []
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 4744781553579738583
+      MaterialSlots:
+        - ~
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 6473578462729814710
+  - Entity: 9571806065026789962
+    Name: Flower
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [-1.2921299, 1.1893164, 4.048748]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 1240827277412224627
+      children:
+        []
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 4744781553579738583
+      MaterialSlots:
+        - ~
+    Canis::Model:
+      color: [1, 1, 1, 1]
+      ModelAsset:
+        uuid: 6473578462729814710
+  - Entity: 8968657676549157174
+    Name: Flower
+    Tag: ""
+    Canis::Transform:
+      active: true
+      position: [1.2508993, 1.1893133, -0.42123973]
+      rotation: [0, -0, 0]
+      scale: [0.7, 0.7, 0.7]
+      parent: 1240827277412224627
+      children:
+        []
+    Canis::Material:
+      color: [1, 1, 1, 1]
+      MaterialAsset:
+        uuid: 4744781553579738583
       MaterialSlots:
         - ~
     Canis::Model:
