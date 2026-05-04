@@ -35,10 +35,6 @@ namespace BlockGame
     {
 
         // Fire Texture logic
-        static float timer = 0.0f;
-        static float maxTimer = 0.05f;
-        static int fireNum = 1;
-        static i32 textureId = AssetManager::LoadTexture("assets/textures/fire_textures/fire_1.png");
 
         timer += _dt;
 

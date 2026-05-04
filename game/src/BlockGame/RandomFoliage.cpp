@@ -32,9 +32,7 @@ namespace BlockGame
 
         // initial mass disable
         for(auto object : objects)
-        {
             object->active = false;
-        }
 
         // iterate through all child objects and use rand % size to choose a few random plants to turn on at runtime
         // second check for index oob safety
